@@ -38,6 +38,10 @@ body {
     margin-top: 1.5rem;
 }
 
+#seven-day-spend {
+    padding-bottom: 5rem;
+}
+
 .light-font {
     color: var(--medium-brown);
 }
@@ -61,6 +65,7 @@ body {
 
 hr {
     border: 1px solid var(--cream);
+    margin: 2rem 0;
 }
 
 .flex {
@@ -69,13 +74,20 @@ hr {
 
 .flex-bar-graph {
     display: flex;
-    justify-content: space-between;
+    gap: 1rem;
     color: var(--medium-brown);
+    align-items: flex-end;
 }
 
 h1, h2, p {
-    margin:0;
+    margin: 0;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.bar-graph {
+    background: var(--soft-red);
+    width: 3rem;
+    border-radius: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.day { text-align: center; }

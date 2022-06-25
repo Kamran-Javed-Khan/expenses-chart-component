@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   <title>Frontend Mentor | Expenses chart component</title>
 </head>
 <body>
@@ -20,15 +21,36 @@
         </section>
     </div>
     <div id="spend-section">
-        <h2 class="dark-font">Spending - Last 7 days</h2>
+        <h2 class="dark-font" id="seven-day-spend">Spending - Last 7 days</h2>
         <section class="flex-bar-graph">
-            <span>mon</span>
-            <span>tue</span>
-            <span>wed</span>
-            <span>thu</span>
-            <span>fri</span>
-            <span>sat</span>
-            <span>sun</span>
+            <div>
+                <div class="bar-graph"></div>
+                <p class="day">mon</p>
+            </div>
+            <div>
+                <div class="bar-graph"></div>
+                <p class="day">tue</p>
+            </div>
+            <div>
+                <div class="bar-graph"></div>
+                <p class="day">wed</p>
+            </div>
+            <div>
+                <div class="bar-graph"></div>
+                <p class="day">thu</p>
+            </div>
+            <div>
+                <div class="bar-graph"></div>
+                <p class="day">fri</p>
+            </div>
+            <div>
+                <div class="bar-graph"></div>
+                <p class="day">sat</p>
+            </div>
+            <div>
+                <div class="bar-graph"></div>
+                <p class="day">sun</p>
+            </div>
         </section>
         <hr>
         <div>
@@ -36,16 +58,11 @@
             <div class="flex">
                 <h1 class="dark-font">$478.33</h1>
                 <div id="spend-percentage" class="auto-left-margin">
-                    <p class="dark-font">2.4%</p>
+                    <p class="dark-font">+2.4%</p>
                     <p class="light-font">from last month</p>
                 </div>
             </div>
         </div>
     </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
