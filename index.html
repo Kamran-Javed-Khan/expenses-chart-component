@@ -1,1 +1,51 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+<body>
+    <div id="my-balance" class="flex">
+        <section id="balance-section">
+            <p>My balance</p>
+            <h1>$921.48</h1>
+        </section>
+        <section id="balance-logo" class="auto-left-margin">
+            <img src="images/logo.svg" alt="My balance logo">
+        </section>
+    </div>
+    <div id="spend-section">
+        <h2 class="dark-font">Spending - Last 7 days</h2>
+        <section class="flex-bar-graph">
+            <span>mon</span>
+            <span>tue</span>
+            <span>wed</span>
+            <span>thu</span>
+            <span>fri</span>
+            <span>sat</span>
+            <span>sun</span>
+        </section>
+        <hr>
+        <div>
+            <p class="light-font">Total this month</p>
+            <div class="flex">
+                <h1 class="dark-font">$478.33</h1>
+                <div id="spend-percentage" class="auto-left-margin">
+                    <p class="dark-font">2.4%</p>
+                    <p class="light-font">from last month</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>

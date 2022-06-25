@@ -1,0 +1,81 @@
+:root {
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+    --semi-bold: 400;
+    --bold: 700;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+#my-balance {
+    color: white;
+    background: var(--soft-red);
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.inline {
+    display: inline-block;
+}
+
+#spend-section {
+    background: var(--very-pale-orange);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 1.5rem;
+}
+
+.light-font {
+    color: var(--medium-brown);
+}
+
+.dark-font {
+    font-weight: var(--bold);
+    color: var(--dark-brown);
+}
+
+.bold {
+    color: var(--dark-brown);
+    font-weight: var(--bold);
+}
+
+.auto-left-margin { margin-left: auto; }
+
+#spend-percentage p {
+    margin: 0;
+    text-align: right;
+}
+
+hr {
+    border: 1px solid var(--cream);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-bar-graph {
+    display: flex;
+    justify-content: space-between;
+    color: var(--medium-brown);
+}
+
+h1, h2, p {
+    margin:0;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
