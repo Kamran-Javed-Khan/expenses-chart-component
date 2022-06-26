@@ -95,7 +95,7 @@ h1, h2, p {
     align-items: center;
 }
 
-#amount {
+.amount {
     background: var(--dark-brown);
     color: var(--cream);
     text-align: center;
@@ -119,7 +119,7 @@ h1, h2, p {
     cursor: pointer;
 }
 
-.bar-flex:hover #amount { visibility: visible; }
+.bar-flex:hover .amount { visibility: visible; }
 
 .day { text-align: center; }
 

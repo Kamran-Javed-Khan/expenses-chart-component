@@ -33,7 +33,7 @@ function fetchData() {
     let today = new Date();
     today = today.getDay();
     const barGraphs = document.querySelectorAll('.bar-graph');
-    const amountSection = document.querySelectorAll('#amount');
+    const amountSection = document.querySelectorAll('.amount');
     for (let i=0; i < data.length; i++) {
         barGraphs[i].style.height = (data[i].amount / 16) * 3 + "rem";
         amountSection[i].innerHTML = "$" + data[i].amount;
