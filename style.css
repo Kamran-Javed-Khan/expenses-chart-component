@@ -21,7 +21,7 @@ body {
 #my-balance {
     color: white;
     background: var(--soft-red);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 1rem;
     display: flex;
     align-items: center;
@@ -55,6 +55,10 @@ body {
 
 .total-amount {
     font-size: 36px;
+}
+
+#balance-section .total-amount {
+    font-weight: var(--bold);   
 }
 
 .bold {

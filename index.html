@@ -11,19 +11,19 @@
   <title>Frontend Mentor | Expenses chart component</title>
 </head>
 <body>
-    <main role="main">
+    <main>
         <div id="my-balance" class="flex">
-            <section id="balance-section">
+            <div id="balance-section">
                 <p>My balance</p>
-                <h1>$921.48</h1>
-            </section>
-            <section id="balance-logo" class="auto-left-margin">
+                <p class="total-amount">$921.48</p>
+            </div>
+            <div id="balance-logo" class="auto-left-margin">
                 <img src="images/logo.svg" alt="My balance logo">
-            </section>
+            </div>
         </div>
         <div id="spend-section">
             <h1 class="dark-font" id="seven-day-spend">Spending - Last 7 days</h1>
-            <section class="flex-bar-graph">
+            <div class="flex-bar-graph">
                 <div class="bar-flex">
                     <div class="amount"></div>
                     <div class="bar-graph"></div>
@@ -59,7 +59,7 @@
                     <div class="bar-graph"></div>
                     <p class="day">sun</p>
                 </div>
-            </section>
+            </div>
             <hr>
             <div>
                 <p class="light-font">Total this month</p>
