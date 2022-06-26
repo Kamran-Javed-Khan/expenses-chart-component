@@ -27,6 +27,8 @@ body {
     align-items: center;
 }
 
+#balance-section p { padding-bottom: 0.5rem; }
+
 .inline {
     display: inline-block;
 }
@@ -39,7 +41,7 @@ body {
 }
 
 #seven-day-spend {
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
 }
 
 .light-font {
@@ -74,7 +76,6 @@ hr {
 
 .flex-bar-graph {
     display: flex;
-    gap: 1rem;
     color: var(--medium-brown);
     align-items: flex-end;
 }
@@ -83,11 +84,37 @@ h1, h2, p {
     margin: 0;
 }
 
+.bar-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#amount {
+    background: var(--dark-brown);
+    color: var(--cream);
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.3em;
+    margin-bottom: 0.5em;
+    font-weight: var(--bold);
+    visibility: hidden;
+}
+
 .bar-graph {
     background: var(--soft-red);
     width: 3rem;
     border-radius: 0.4rem;
     margin-bottom: 0.5rem;
 }
+
+.bar-flex:hover .bar-graph {
+    filter: brightness(1.2);
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.bar-flex:hover #amount { visibility: visible; }
 
 .day { text-align: center; }

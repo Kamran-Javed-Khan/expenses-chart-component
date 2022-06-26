@@ -31,11 +31,14 @@ const data = [
 
 function fetchData() {
     let today = new Date();
-    today = today.getDay() - 1;
+    today = today.getDay();
     const barGraphs = document.querySelectorAll('.bar-graph');
+    const amountSection = document.querySelectorAll('#amount');
     for (let i=0; i < data.length; i++) {
         barGraphs[i].style.height = (data[i].amount / 16) * 3 + "rem";
+        amountSection[i].innerHTML = "$" + data[i].amount;
     }
+    today = today != 0 ? today - 1 : today + 6;
     barGraphs[today].style.background = "hsl(186, 34%, 60%)";
 }
 
