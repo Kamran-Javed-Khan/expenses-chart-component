@@ -53,6 +53,10 @@ body {
     color: var(--dark-brown);
 }
 
+.total-amount {
+    font-size: 36px;
+}
+
 .bold {
     color: var(--dark-brown);
     font-weight: var(--bold);
@@ -118,3 +122,53 @@ h1, h2, p {
 .bar-flex:hover #amount { visibility: visible; }
 
 .day { text-align: center; }
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    #my-balance {
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+
+    #spend-section {
+        border-radius: 1rem;
+        padding: 1rem;
+        width: 20rem;
+    }
+
+    .bar-flex {
+        width: 2.5em;
+    }
+
+    .bar-graph {
+        width: 2em;
+    }
+}
+
+@media (max-width: 280px) {
+    h1 {
+        font-size: 22px;
+    }
+    #my-balance {
+        padding: 0.5rem;
+    }
+    #spend-section {
+        width: 15rem;
+    }
+    .bar-flex {
+        width: 2em;
+    }
+    .bar-graph {
+        width: 1.2em;
+        border-radius: 0.2rem;
+    }
+    #spend-percentage p {
+        font-size: 15px;
+    }
+    .total-amount {
+        font-size: 32px;
+    }
+}
